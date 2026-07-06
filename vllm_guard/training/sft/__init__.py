@@ -1,0 +1,2 @@
+"""Canonical SFT training entrypoints."""
+

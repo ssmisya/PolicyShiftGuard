@@ -1,0 +1,13 @@
+name: adaptive_policy_v2.7_withreason
+root_dir: data_curation/outputs/v2.7_withreason
+hf_repo: PolicyShiftBench/PolicyShiftBench
+splits:
+  eval:
+    - id_test
+    - ood_test
+  no_think_sft: sft
+  think_sft: sft_think
+  rl: rl
+semantics:
+  sft: no-think, no reason columns
+  sft_think: think split with reason and target_text

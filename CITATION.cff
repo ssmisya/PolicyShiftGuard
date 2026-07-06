@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use PolicyShiftGuard or PolicyShiftBench, please cite the associated paper."
+title: "PolicyShiftGuard: Benchmarking and Improving Policy-Adaptive Image Guardrails"
+authors:
+  - name: "PolicyShiftGuard Authors"
+version: "0.1.0"
+date-released: "2026-07-05"
+url: "https://github.com/ssmisya/PolicyShiftGuard"
+repository-code: "https://github.com/ssmisya/PolicyShiftGuard"
+license: "MIT"
+preferred-citation:
+  type: article
+  title: "PolicyShiftGuard: Benchmarking and Improving Policy-Adaptive Image Guardrails"
+  authors:
+    - name: "PolicyShiftGuard Authors"
+  year: 2026

@@ -1,0 +1,11 @@
+benchmark: adaptive_policy_v2.7_withreason
+dataset_path: data_curation/outputs/v2.7_withreason
+splits:
+  - id_test
+  - ood_test
+defaults:
+  batch_size: 1
+  max_tokens: 64
+  temperature: 0.0
+  model_type: vllm
+

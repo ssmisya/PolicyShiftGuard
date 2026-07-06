@@ -1,0 +1,87 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+dist/
+build/
+
+# Environments and local secrets
+.env
+.env.*
+.venv/
+venv/
+env/
+.python-version
+
+# Editors and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Local agent/project memory
+.claude/
+AGENTS.md
+CLAUDE.md
+agents/
+skills/
+
+# Runtime outputs
+outputs/
+logs/
+wandb/
+train/
+scripts/
+*.log
+*.pid
+*.jsonl
+*.bak
+
+# Dataset and experiment artifacts
+data/
+data_curation/*
+!data_curation/rules/
+!data_curation/rules/**
+data_curation/rules/*.bak
+checkpoints/
+ckpts/
+models/
+third_party/
+balance.py
+
+# Public docs are curated; older internal docs remain local-only.
+docs/*
+!docs/
+!docs/architecture.md
+!docs/data.md
+!docs/model_zoo.md
+!docs/reproducibility.md
+!docs/validators.md
+
+# Large ML artifacts
+*.arrow
+*.parquet
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.gguf
+*.sif
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.rar
+
+# Notebook checkpoints
+.ipynb_checkpoints/
