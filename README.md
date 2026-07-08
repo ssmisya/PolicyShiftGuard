@@ -6,8 +6,9 @@
 
 Official repository for the PolicyShiftGuard paper and the PolicyShiftBench benchmark.
 
-[![Paper](https://img.shields.io/badge/Paper-coming%20soon-b31b1b?style=for-the-badge)](#citation)
-[![Dataset](https://img.shields.io/badge/Dataset-PolicyShiftBench%2FPolicyShiftBench-ffcc00?style=for-the-badge)](https://huggingface.co/datasets/PolicyShiftBench/PolicyShiftBench)
+[![Paper](https://img.shields.io/badge/Paper-arXiv%3A2607.05910-b31b1b?style=for-the-badge)](https://arxiv.org/abs/2607.05910)
+[![Models](https://img.shields.io/badge/%F0%9F%A4%97%20Models-PolicyShiftGuard-ffcc00?style=for-the-badge)](https://huggingface.co/PolicyShiftGuard)
+[![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-PolicyShiftBench-ffcc00?style=for-the-badge)](https://huggingface.co/datasets/PolicyShiftGuard/PolicyShiftBench)
 [![Code](https://img.shields.io/badge/Code-GitHub-24292f?style=for-the-badge)](https://github.com/ssmisya/PolicyShiftGuard)
 [![License](https://img.shields.io/badge/License-MIT-2ea44f?style=for-the-badge)](LICENSE)
 
@@ -25,8 +26,10 @@ PolicyShiftGuard studies a practical failure mode of image guardrails: the corre
 
 | Resource | Status |
 |---|---|
-| Paper | Coming soon |
-| Dataset | [`PolicyShiftBench/PolicyShiftBench`](https://huggingface.co/datasets/PolicyShiftBench/PolicyShiftBench) |
+| Paper | [`arXiv:2607.05910`](https://arxiv.org/abs/2607.05910) |
+| Models | [`PolicyShiftGuard`](https://huggingface.co/PolicyShiftGuard) (7B, 3B, 7B-RP-SFT, 3B-RP-SFT) |
+| Dataset | [`PolicyShiftGuard/PolicyShiftBench`](https://huggingface.co/datasets/PolicyShiftGuard/PolicyShiftBench) |
+| Training data | [`PolicyShiftGuard/adaptive-policy-v2.8-withreason`](https://huggingface.co/datasets/PolicyShiftGuard/adaptive-policy-v2.8-withreason) |
 | Code | [`ssmisya/PolicyShiftGuard`](https://github.com/ssmisya/PolicyShiftGuard) |
 | Policy rules | [`data_curation/rules/`](data_curation/rules/) |
 | Reproducibility guide | [`docs/reproducibility.md`](docs/reproducibility.md) |
@@ -35,6 +38,7 @@ PolicyShiftGuard studies a practical failure mode of image guardrails: the corre
 
 ## News
 
+- **2026-07-07**: Paper released on [arXiv:2607.05910](https://arxiv.org/abs/2607.05910); models and datasets released on the [PolicyShiftGuard](https://huggingface.co/PolicyShiftGuard) Hugging Face organization.
 - **2026-07-05**: Initial public repository cleanup for PolicyShiftGuard and PolicyShiftBench.
 
 ## Why This Benchmark
@@ -109,7 +113,7 @@ Run a single-split evaluation with a Hugging Face or local model:
 ```bash
 python -m vllm_guard.evaluation.runner \
   --model-name qwen2.5-vl-3b \
-  --dataset-repo PolicyShiftBench/PolicyShiftBench \
+  --dataset-repo PolicyShiftGuard/PolicyShiftBench \
   --split id_test \
   --output-dir outputs/eval/qwen25vl3b/id_test \
   --model-type vllm \
@@ -123,7 +127,7 @@ Evaluate a local checkpoint:
 python -m vllm_guard.evaluation.runner \
   --model-name policyshiftguard-local \
   --model-path /path/to/checkpoint \
-  --dataset-repo PolicyShiftBench/PolicyShiftBench \
+  --dataset-repo PolicyShiftGuard/PolicyShiftBench \
   --split ood_test \
   --output-dir outputs/eval/local/ood_test \
   --model-type vllm
@@ -205,11 +209,11 @@ Use Hugging Face Hub or object storage for large artifacts.
 If you use this repository, please cite the paper:
 
 ```bibtex
-@misc{policyshiftguard2026,
-  title  = {PolicyShiftGuard: Benchmarking and Improving Policy-Adaptive Image Guardrails},
-  author = {PolicyShiftGuard Authors},
-  year   = {2026},
-  note   = {Preprint}
+@article{song2026policyshiftguard,
+  title   = {PolicyShiftGuard: Benchmarking and Improving Policy-Adaptive Image Guardrails},
+  author  = {Song, Mingyang and Xu, Luxin and Sun, Haoyu and Pan, Minzhou and Cheng, Yu and Li, Bo},
+  journal = {arXiv preprint arXiv:2607.05910},
+  year    = {2026}
 }
 ```
 

@@ -2,7 +2,7 @@
 set -euo pipefail
 
 MODEL_NAME="${MODEL_NAME:-qwen2.5-vl-3b}"
-DATASET_REPO="${DATASET_REPO:-PolicyShiftBench/PolicyShiftBench}"
+DATASET_REPO="${DATASET_REPO:-PolicyShiftGuard/PolicyShiftBench}"
 OUTPUT_ROOT="${OUTPUT_ROOT:-outputs/eval}"
 RUN_NAME="${RUN_NAME:-qwen25vl3b}"
 

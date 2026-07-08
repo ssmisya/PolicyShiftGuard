@@ -17,7 +17,7 @@ Update this table when checkpoints are published.
 python -m vllm_guard.evaluation.runner \
   --model-name policyshiftguard-3b \
   --model-path /path/or/hf/repo \
-  --dataset-repo PolicyShiftBench/PolicyShiftBench \
+  --dataset-repo PolicyShiftGuard/PolicyShiftBench \
   --split id_test \
   --output-dir outputs/eval/policyshiftguard3b/id_test \
   --model-type vllm \

@@ -47,7 +47,7 @@ def validate_codebase() -> ValidationReport:
     readme_path = REPO_ROOT / "README.md"
     if readme_path.exists():
         readme_text = readme_path.read_text(encoding="utf-8")
-        if "PolicyShiftBench/PolicyShiftBench" not in readme_text:
+        if "PolicyShiftGuard/PolicyShiftBench" not in readme_text:
             issues.append(
                 ValidationIssue(
                     "warning",

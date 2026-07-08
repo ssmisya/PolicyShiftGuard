@@ -17,7 +17,7 @@ This module evaluates multimodal guardrail models on PolicyShiftBench splits.
 ```bash
 python -m vllm_guard.evaluation.runner \
   --model-name qwen2.5-vl-3b \
-  --dataset-repo PolicyShiftBench/PolicyShiftBench \
+  --dataset-repo PolicyShiftGuard/PolicyShiftBench \
   --split id_test \
   --output-dir outputs/eval/qwen25vl3b/id_test \
   --model-type vllm \

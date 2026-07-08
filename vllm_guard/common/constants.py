@@ -7,7 +7,7 @@ CANONICAL_DATASET_DIR = (
     REPO_ROOT / "data_curation" / "outputs" / "v2.7_withreason"
 )
 CANONICAL_DATASET_NAME = "adaptive_policy_v2.7_withreason"
-CANONICAL_HF_DATASET_REPO = "PolicyShiftBench/PolicyShiftBench"
+CANONICAL_HF_DATASET_REPO = "PolicyShiftGuard/PolicyShiftBench"
 
 ADAPTIVE_POLICY_EVAL_SPLITS = ("id_test", "ood_test", "sft", "sft_think", "rl")
 ADAPTIVE_POLICY_CATEGORY_NAMES = {

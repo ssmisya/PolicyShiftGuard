@@ -1,6 +1,6 @@
 name: adaptive_policy_v2.7_withreason
 root_dir: data_curation/outputs/v2.7_withreason
-hf_repo: PolicyShiftBench/PolicyShiftBench
+hf_repo: PolicyShiftGuard/PolicyShiftBench
 splits:
   eval:
     - id_test

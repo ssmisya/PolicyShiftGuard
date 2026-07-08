@@ -48,7 +48,7 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/ssmisya/PolicyShiftGuard"
 Repository = "https://github.com/ssmisya/PolicyShiftGuard"
-Dataset = "https://huggingface.co/datasets/PolicyShiftBench/PolicyShiftBench"
+Dataset = "https://huggingface.co/datasets/PolicyShiftGuard/PolicyShiftBench"
 Documentation = "https://github.com/ssmisya/PolicyShiftGuard/tree/main/docs"
 
 [project.optional-dependencies]
